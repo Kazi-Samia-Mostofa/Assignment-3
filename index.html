@@ -4,8 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+      <style>
+        .font-sora {
+          font-family: "Sora", serif;
+        }
+        .font-adlam{
+          font-family: "ADLaM Display", serif;
+        }
+
+      </style>
 </head>
-<body>
-    <p></p>
-</body>
-</html>
+<body class="font-sora">
+    <header>
+      <!-- part-1 -->
+      <!-- navbar -->
+      <nav class="flex bg-[#FFF9F4] h-14 w-full justify-between items-center">
+
+        <div class="flex">
+        <img src="logo-header.png" alt="" class="ml-28 mr-0 h-8">
+        <h3 class="content-center ml-2">Browse<span class="text-[#FFDC26]">4</span>pets</h3>
+        </div>
+      
+        <div class="">
+           <ul class="flex">
+            <li class="mr-7 ml-24"><a href=""><button>Find a pet</button></a></li>
+            <li class="mr-7"><a href=""><button>Breeds</button></a></li>
+            <li class="mr-7"><a href=""><button>Contact us</button></a></li>
+           </ul> 
+        </div>
+          
+        <div class="flex">
+          <i class="fa-regular fa-bell mr-2 mt-2"></i>
+          <i class="fa fa-search mr-2 mt-2"></i>
+          <ul class="flex mr-14">
+            <li class="mr-2"><a href=""><button class="border border-[#FFDC26] rounded-lg w-20">Login</button></a></li>
+            <li class="mr-12"><a href=""><button class="bg-[#FFDC26] rounded-md w-24 h-7 animate-pulse">Register</button></a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- part-2 -->
+      <section class="w-10/12 h-screen mx-auto flex place-items-start bg-[url('./cat-big.png')] bg-center bg-no-repeat bg-cover">
+        <div class="mt-20 ">
+          <h1 class="text-6xl font-adlam">
+          <span>Pamper Your Pet,</span>
+          <br>
+          <span>Because They Deserve</span>
+          <br>
+          <span>the Bes</span>
+          </h1>
+          <p class="mt-4">Discover a world of treats, toys, and essentials handpicked for</p>
+          <br>
+          <p class="-mt-6">your furry friends. Shop now and make tails wag with joy!</p>
+          <a href=""><button class="mt-3 bg-[#FFDC26] w-32 h-8 rounded-md animate-pulse">Find a pet</button></a>
+        </div>
+      </section>
+    </header>
+    <!-- part-3 -->
+    <main>
+      <section>
+        <h1 class="ml-28 mt-14 text-4xl font-adlam">Browse By categories</h1>
+        <div class="flex w-11/12 gap-5 mb-20">
+            <div class="ml-28 w-52 h-52 mt-10 bg-[#F9DF8A] rounded-lg justify-items-center">
+              <img class="rounded-full p-4 mt-8  bg-white animate-bounce" src="./dog-cartoon.png" alt="">
+              <h2 class="font-bold p-5 font-adlam ">Dog</h2>
+              <p class="-mt-4">3 items</p>
+            </div>
+          <div class="w-52 h-52 mt-10 bg-[#F9DF8A] rounded-lg justify-items-center">
+            <img class="rounded-full p-4 mt-8 bg-white animate-bounce" src="./fish-cartoon.png" alt="">
+            <h2 class="font-bold p-5 font-adlam ">Fish</h2>
+            <p class="-mt-4">3 items</p>
+          </div>
+          <div class="w-52 h-52 mt-10 bg-[#F9DF8A] rounded-lg justify-items-center">
+            <img class="rounded-full p-4 mt-8 bg-white animate-bounce" src="./cat-cartoon.png" alt="">
+            <h2 class="font-bold p-5 font-adlam">Cat</h2>
+            <p class="-mt-4">3 items</p>
+          </div>
+          <div class="w-52 h-52 mt-10 bg-[#F9DF8A] rounded-lg justify-items-center">
+            <img class="rounded-full p-4 mt-8 bg-white animate-bounce" src="./bird-cartoon.png" alt="">
+            <h2 class="font-bold p-5 font-adlam">Birds</h2>
+            <p class="-mt-4">3 items</p>
+          </div>
+          <div class="w-52 h-52 mt-10 bg-[#F9DF8A] rounded-lg justify-items-center">
+            <img class="rounded-full p-5 mt-8 bg-white animate-bounce" src="./mouse-cartoon.png" alt="">
+            <h2 class="font-bold p-5 font-adlam">Small pet</h2>
+            <p class="-mt-4">3 items</p>
+          </div>
+          <div class="w-52 h-52 mt-10 bg-[#F9DF8A] rounded-lg justify-items-center">
+            <img class="rounded-full p-4 mt-8 bg-white animate-bounce " src="./rabbit-cartoon.png" alt="">
+            <h2 class="font-bold p-5 font-adlam">Rabit</h2>
+            <p class="-mt-4">2 items</p>
+          </div>
+        </div>
+        <!-- part-4 -->
+      </section>
+       <section class="mx-auto bg-[#FFF9F4] w-full h-screen">
+        <h2 class="pt-20 ml-28 text-4xl font-adlam">Trending Pet Products</h2>
+        <div class="flex gap-5">
+          <div class="ml-28 w-96 h-auto mt-14 rounded-lg bg-[#F9DF8A]">
+            <h3 class="text-3xl pt-12 pl-8 font-adlam">T- Shirt For Dogs</h3>
+            <p class="pt-4 pl-8"> Discover a world of treats, toys, and</p>
+            <p class="pl-8 pt-0">essentials handpicked for</p>
+            <div class="flex">
+              <a href=""><button class="bg-[#FFFFFF] w-32 h-12 ml-8 mt-5 rounded-md animate-pulse">Shop Now</button></a>
+              <div class="flex items-center">
+                <img class="self-end -mt-6" src="./cute-pet-small.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="mt-14 ml-1 mr-28 w-7/12 mx-auto h-96 grid grid-cols-3 gap-5">
+
+            <div class="border bg-[#FFFFFF] rounded-lg flex">
+              <img class="rounded-md bg-[#FFF9F4] p-5 ml-4 mt-4 mb-4" src="./dog-cartoon.png" alt="">
+              <div>
+                <i class="fa-sharp fa-solid fa-star ml-3 mt-4 text-[#FFC107] fill-[#FFC107]"></i>
+                <p class="ml-9 -mt-6">4.5</p>
+                <p class="font-bold ml-3 mt-2">Pet Bed</p>
+                <i class="fa-sharp fa-solid fa-dollar-sign ml-3 mt-2"></i>
+                <p class="ml-6 -mt-6">39.99</p>
+              </div>
+              
+            </div>
+            <div class="border bg-[#FFFFFF] rounded-lg flex">
+              <img class="rounded-md bg-[#FFF9F4] p-5 ml-4 mt-4 mb-4"  src="./fish-cartoon.png" alt="">
+              <div>
+                <i class="fa-sharp fa-solid fa-star ml-3 mt-4 text-[#FFC107] fill-[#FFC107]"></i>
+                <p class="ml-9 -mt-6">4.5</p>
+                <p class="font-bold ml-3 mt-2">Pet Bed</p>
+                <i class="fa-sharp fa-solid fa-dollar-sign ml-3 mt-2"></i>
+                <p class="ml-6 -mt-6">39.99</p>
+              </div>
+            </div>
+            <div class="border bg-[#FFFFFF] rounded-lg flex">
+              <img class="rounded-md bg-[#FFF9F4] p-5 ml-4 mt-4 mb-4" src="./bird-cartoon.png" alt="">
+              <div>
+                <i class="fa-sharp fa-solid fa-star ml-3 mt-4 text-[#FFC107] fill-[#FFC107]"></i>
+                <p class="ml-9 -mt-6">4.5</p>
+                <p class="font-bold ml-3 mt-2">Pet Bed</p>
+                <i class="fa-sharp fa-solid fa-dollar-sign ml-3 mt-2"></i>
+                <p class="ml-6 -mt-6">39.99</p>
+              </div>
+            </div>
+            <div class="border bg-[#FFFFFF] rounded-lg flex">
+              <img class="rounded-md bg-[#FFF9F4] p-5 ml-4 mt-4 mb-4" src="./rabbit-cartoon.png" alt="">
+              <div>
+                <i class="fa-sharp fa-solid fa-star ml-3 mt-4 text-[#FFC107] fill-[#FFC107]"></i>
+                <p class="ml-9 -mt-6">4.5</p>
+                <p class="font-bold ml-3 mt-2">Pet Bed</p>
+                <i class="fa-sharp fa-solid fa-dollar-sign ml-3 mt-2"></i>
+                <p class="ml-6 -mt-6">39.99</p>
+              </div>
+            </div>
+            <div class="border bg-[#FFFFFF] rounded-lg flex">
+              <img class="rounded-md bg-[#FFF9F4] p-5 ml-4 mt-4 mb-4" src="./bird-cartoon.png" alt="">
+              <div>
+                <i class="fa-sharp fa-solid fa-star ml-3 mt-4 text-[#FFC107] fill-[#FFC107]"></i>
+                <p class="ml-9 -mt-6">4.5</p>
+                <p class="font-bold ml-3 mt-2">Pet Bed</p>
+                <i class="fa-sharp fa-solid fa-dollar-sign ml-3 mt-2"></i>
+                <p class="ml-6 -mt-6">39.99</p>
+              </div>
+            </div>
+            <div class="border bg-[#FFFFFF] rounded-lg flex">
+              <img class="rounded-md bg-[#FFF9F4] p-5 ml-4 mt-4 mb-4" src="./pet-couch.png" alt="">
+              <div>
+                <i class="fa-sharp fa-solid fa-star ml-3 mt-4 text-[#FFC107] fill-[#FFC107]"></i>
+                <p class="ml-9 -mt-6">4.5</p>
+                <p class="font-bold ml-3 mt-2">Pet Bed</p>
+                <i class="fa-sharp fa-solid fa-dollar-sign ml-3 mt-2"></i>
+                <p class="ml-6 -mt-6">39.99</p>
+              </div>
+            </div>
+            <div class="border bg-[#FFFFFF] rounded-lg flex">
+              <img class="rounded-md bg-[#FFF9F4] p-5 ml-4 mt-4 mb-4" src="./fish-cartoon.png" alt="">
+              <div>
+                <i class="fa-sharp fa-solid fa-star ml-3 mt-4 text-[#FFC107] fill-[#FFC107]"></i>
+                <p class="ml-9 -mt-6">4.5</p>
+                <p class="font-bold ml-3 mt-2">Pet Bed</p>
+                <i class="fa-sharp fa-solid fa-dollar-sign ml-3 mt-2"></i>
+                <p class="ml-6 -mt-6">39.99</p>
+              </div>
+            </div>
+            <div class="border bg-[#FFFFFF] rounded-lg flex">
+              <img class="rounded-md bg-[#FFF9F4] p-5 ml-4 mt-4 mb-4" src="./pet-couch.png" alt="">
+              <div>
+                <i class="fa-sharp fa-solid fa-star ml-3 mt-4 text-[#FFC107] fill-[#FFC107]"></i>
+                <p class="ml-9 -mt-6">4.5</p>
+                <p class="font-bold ml-3 mt-2">Pet Bed</p>
+                <i class="fa-sharp fa-solid fa-dollar-sign ml-3 mt-2"></i>
+                <p class="ml-6 -mt-6">39.99</p>
+              </div>
+            </div>
+            <div class="border bg-[#FFFFFF] rounded-lg flex">
+              <img class="rounded-md bg-[#FFF9F4] p-5 ml-4 mt-4 mb-4"  src="./rabbit-cartoon.png" alt="">
+              <div>
+                <i class="fa-sharp fa-solid fa-star ml-3 mt-4 text-[#FFC107] fill-[#FFC107]"></i>
+                <p class="ml-9 -mt-6">4.5</p>
+                <p class="font-bold ml-3 mt-2">Pet Bed</p>
+                <i class="fa-sharp fa-solid fa-dollar-sign ml-3 mt-2"></i>
+                <p class="ml-6 -mt-6">39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
